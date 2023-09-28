@@ -1,0 +1,8 @@
+defaults: # optional, all defaults can be overwritten per node
+  publish: ["1A00"] # list of objects to be published (one topic per node)
+nodes:
+  node4:
+    # ...
+    #publish: ["1003sub0!"] # list of objects to be published (one topic per node)
+  node6:
+    # ...

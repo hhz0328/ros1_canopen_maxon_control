@@ -1,0 +1,23 @@
+joint_names: [base_link1_joint, link1_link2_joint]
+# joint_names: [base_link1_joint]
+
+joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+# Settings of the controller and assossiated drive modes
+# drive mode : see http://wiki.ros.org/canopen_402
+
+# position controllers
+# example using Cyclic Synchronous Position (8) drive mode
+  
+joint_trajectory_controller:
+  type: position_controllers/JointTrajectoryController
+  joints: 
+    - base_link1_joint 
+    - link1_link2_joint  
+  required_drive_mode: 8
+  constraints:
+    stopped_velocity_tolerance: 20
+    base_link1_joint: {trajectory: 50, goal: 50}
+    link1_link2_joint: {trajectory: 50, goal: 50}

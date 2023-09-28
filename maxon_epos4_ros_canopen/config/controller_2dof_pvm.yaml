@@ -1,0 +1,23 @@
+joint_names: [base_link1_joint, base_link2_joint]
+
+joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+## velocity controller
+joint_group_velocity_controller:
+  type: velocity_controllers/JointGroupVelocityController
+  joints:
+     - base_link1_joint
+     - base_link2_joint
+  required_drive_mode: 3
+
+base_link1_joint_velocity_controller:
+  type: velocity_controllers/JointVelocityController
+  joint: base_link1_joint
+  required_drive_mode: 3
+
+base_link2_joint_velocity_controller:
+  type: velocity_controllers/JointVelocityController
+  joint: base_link2_joint
+  required_drive_mode: 3

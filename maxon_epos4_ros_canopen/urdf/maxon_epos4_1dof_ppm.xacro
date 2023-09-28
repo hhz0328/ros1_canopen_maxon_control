@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!-- maxon EPOS4 example with 1 DOF -->
+<robot name="maxon_epos4" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  
+  <!-- Base Link -->
+  <link name="base_link">
+  </link>
+  
+  <!-- Link1 Link -->
+  <link name="link1_link">
+  </link>
+
+  <!-- Joint between Base Link and Link1 Link -->
+  <joint name="base_link1_joint" type="revolute">
+    <parent link="base_link"/>
+    <child link="link1_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+    <!--dynamics damping="0.7"/-->
+    <limit effort="100.0" velocity="100000" lower="-100000.0" upper="100000.0"/>
+  </joint>
+ 
+  <transmission name="transmission_base_link1">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="base_link1_joint">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="link1_maxon_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+</robot>

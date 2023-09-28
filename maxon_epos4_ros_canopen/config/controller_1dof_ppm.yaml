@@ -1,0 +1,22 @@
+joint_names: [base_link1_joint]
+
+joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+# Settings of the controller and assossiated drive modes
+# drive mode : see http://wiki.ros.org/canopen_402
+
+# position controllers
+# example using Profiled Position (1) drive mode
+
+joint_group_position_controller:
+  type: position_controllers/JointGroupPositionController
+  joints:
+    - base_link1_joint 
+  required_drive_mode: 1
+  
+base_link1_joint_position_controller:
+  type: position_controllers/JointPositionController
+  joint: base_link1_joint 
+  required_drive_mode: 1

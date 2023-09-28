@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+
+<launch>
+
+	<group ns="/maxon">
+
+		<!-- Load the URDF into ROS parameter server -->
+		<param name="/maxon/robot_description" command="$(find xacro)/xacro '$(find maxon_epos4_ros_canopen)/urdf/maxon_epos4_1dof_ppm.xacro'"/>
+
+		<node name="canopen_motor" pkg="canopen_motor_node" type="canopen_motor_node" output="screen" clear_params="true" > 
+			<rosparam command="load" file="$(find maxon_epos4_ros_canopen)/config/canopen_bus_layer.yaml" />
+			<rosparam command="load" file="$(find maxon_epos4_ros_canopen)/config/controller_1dof_ppm.yaml" />
+			<rosparam command="load" file="$(find maxon_epos4_ros_canopen)/config/node_layer_1dof_ppm.yaml" />
+		</node>
+
+		<!-- load the controllers -->
+		<node name="controller_spawner" pkg="controller_manager" type="controller_manager" respawn="false"
+			output="screen" args="spawn 
+			/maxon/canopen_motor/joint_state_controller
+			/maxon/canopen_motor/base_link1_joint_position_controller
+			"/>
+		
+	</group>
+
+</launch>

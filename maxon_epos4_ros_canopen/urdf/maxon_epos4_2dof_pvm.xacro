@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!-- maxon EPOS4 example with 2 DOF -->
+<robot name="maxon_epos4" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  
+  <!-- Base link -->
+  <link name="base_link">
+  </link>
+  
+  <!-- Link1 link -->
+  <link name="link1_link">
+  </link>
+
+  <!-- Joint between Base link and Link1 link -->
+  <joint name="base_link1_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="link1_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+    <dynamics damping="0.7"/>
+    <limit effort="100.0" velocity="1300"/>
+  </joint>
+
+  <!-- Link2 Link -->
+  <link name="link2_link">
+  </link>
+ 
+  <!-- Joint between Base link and Link2 link -->
+  <joint name="base_link2_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="link2_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+    <dynamics damping="0.7"/>
+    <limit effort="100.0" velocity="1300"/>
+  </joint>
+
+  <transmission name="transmission_base_link1">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="base_link1_joint">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="link1_maxon_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="transmission_base_link2">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="base_link2_joint">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="link2_maxon_motor">
+      <hardwareInterface>EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+</robot>

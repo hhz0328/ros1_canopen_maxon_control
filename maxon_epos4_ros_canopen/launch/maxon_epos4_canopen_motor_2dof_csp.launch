@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<!-- Example launch file for 2 controllers using Profile Velocity Mode -->
+<launch>
+
+	<group ns="/maxon">
+
+		<!-- Load the URDF into ROS parameter server -->
+		<param name="/maxon/robot_description" command="$(find xacro)/xacro '$(find maxon_epos4_ros_canopen)/urdf/maxon_epos4_2dof_csp.xacro'"/>
+
+		<!-- Run the canopen_motor_node with parameters defined in config files -->
+		<node name="canopen_motor" pkg="canopen_motor_node" type="canopen_motor_node" output="screen" clear_params="true" > 
+			<rosparam command="load" file="$(find maxon_epos4_ros_canopen)/config/canopen_bus_layer.yaml" />
+			<rosparam command="load" file="$(find maxon_epos4_ros_canopen)/config/controller_2dof_csp.yaml" />
+			<rosparam command="load" file="$(find maxon_epos4_ros_canopen)/config/node_layer_2dof_csp.yaml" />
+			<!-- rosparam command="load" file="$(find maxon_epos4_ros_canopen)/config/ros_layer.yaml" /-->
+		</node>
+
+		<!-- Load the controllers -->
+		<node name="controller_spawner" pkg="controller_manager" type="controller_manager" respawn="false"
+			output="screen" args="spawn 
+			/maxon/canopen_motor/joint_state_controller
+			/maxon/canopen_motor/joint_trajectory_controller
+			"/>
+
+	</group>
+
+</launch>

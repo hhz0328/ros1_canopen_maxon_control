@@ -1,0 +1,24 @@
+joint_names: [joint3, joint4]
+
+joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+# Settings of the controller and assossiated drive modes
+# drive mode : see http://wiki.ros.org/canopen_402
+
+# position controllers
+# example using Cyclic Synchronous Position (8) drive mode
+  
+joint_trajectory_controller:
+  type: position_controllers/JointTrajectoryController
+  joints: 
+    - joint3 
+    - joint4  
+  required_drive_mode: 8
+  constraints:
+    stopped_velocity_tolerance: 5000
+    joint3: {trajectory: 500, goal: 500}
+    joint4: {trajectory: 500, goal: 500}
+
+

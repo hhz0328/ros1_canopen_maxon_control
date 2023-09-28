@@ -1,0 +1,31 @@
+# struct syntax
+nodes:
+  node1:
+    id: 4
+    name: base_link1_joint
+    eds_pkg: maxon_epos4_ros_canopen # optionals package  name for relative path
+    eds_file: "config/epos4_50_15_can_ec90flat_gp52c_mile800_node4.dcf" # path to EDS/DCF file
+  node2:
+    id: 6
+    name: base_link2_joint
+    eds_pkg: maxon_epos4_ros_canopen # optionals package  name for relative path
+    eds_file: "config/epos4_50_15_can_ec90flat_gp52c_mile800_node6.dcf" # path to EDS/DCF file
+
+defaults: # optional, all defaults can be overwritten per node
+#  eds_pkg: my_config_package # optional package  name for relative path
+#  eds_file: "my_config.dcf" # path to EDS/DCF file
+#  dcf_overlay: # "ObjectID": "ParameterValue" (both as strings)
+#    "6098": "0" # No homing operation required
+#    "1016sub1" : "0x7F0064" # heartbeat timeout of 100 ms for master at 127
+#    "1017": "100" # heartbeat producer
+
+# canopen_chain_node settings ..
+  motor_allocator: canopen::Motor402::Allocator # select allocator for motor layer
+#   motor_layer: settings passed to motor layer (plugin-specific)
+  switching_state: 2 # (Operation_Enable), state for mode switching. Drive mode of operation from canopen_402 wiki
+  pos_to_device: "pos" # inc 
+  pos_from_device: "obj6064" # inc 
+  vel_to_device: "vel" # rpm
+  vel_from_device: "obj606C" # rpm 
+  eff_to_device: "rint(eff)" # just round to integer
+  eff_from_device: "0" # unset
