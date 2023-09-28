@@ -1,0 +1,2 @@
+# canopen_maxon_control
+使用了ros_control和ros_canopen官方提供的功能包，完成了can通讯驱动maxon电机，实现了ppm、pvm、csp三种模式的控制
