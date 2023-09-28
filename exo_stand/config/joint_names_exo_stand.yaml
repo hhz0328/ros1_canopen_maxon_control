@@ -1,0 +1,2 @@
+# controller_joint_names: ['', 'joint1', 'joint2', 'joint3', 'joint4', ]
+controller_joint_names: ['', 'joint3', 'joint4', ]
