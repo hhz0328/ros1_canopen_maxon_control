@@ -35,5 +35,5 @@
   $ sudo ip link set can0 up
   $ roslaunch maxon_epos4_ros_canopen maxon_epos4_canopen_motor_4dof_csp.launch
   $ rosservice call /driver/init
-  $ roslaunch maxon_epos4_moveit_config demo.launch rviz_tutorial:=true
+  $ roslaunch exo_stand_moveit_config demo.launch rviz_tutorial:=true
 ```
