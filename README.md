@@ -7,6 +7,8 @@
 ![EPOS4_24_1 5_Compact-2_small](https://user-images.githubusercontent.com/66867384/143435983-b63cc9e0-8983-4f60-9cd4-cbe4f84f76f2.jpg)
   
 ![maxon_Logo_small](https://user-images.githubusercontent.com/66867384/143436010-5d3968e7-79f8-48b9-a35b-e5159ec20ee6.png)
+
+![](https://github.com/hhz0328/ros_exoskeleton_maxon_simulation/blob/main/%E4%BB%BF%E7%9C%9F%E6%8E%A7%E5%88%B6%E6%A1%86%E6%9E%B6.jpg)
 ## 2）环境配置
 （1）**用到的功能包**：ros_control、ros_canopen
 
