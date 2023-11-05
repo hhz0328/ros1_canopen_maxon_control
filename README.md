@@ -1,6 +1,6 @@
 # canopen_maxon_control——2023.7.28
 ## 1）功能介绍
-使用了ros_control和ros_canopen官方提供的功能包，完成了can通讯驱动maxon电机，实现了ppm（位置模式）、pvm（速度模式）、csp（循环同步位置控制）三种模式的控制。
+在ros1-noetic中，使用了ros_control和ros_canopen官方提供的功能包，完成了can通讯驱动maxon电机，实现了ppm（位置模式）、pvm（速度模式）、csp（循环同步位置控制）三种模式的控制。
 
 效果展示（转载自本人B站）：https://www.bilibili.com/video/BV1HN4y1r7b5/?spm_id_from=333.999.0.0 
 
