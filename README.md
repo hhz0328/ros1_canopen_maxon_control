@@ -3,7 +3,7 @@
 2023.7.28
 ## 1）功能介绍
 使用了ros_control和ros_canopen官方提供的功能包，完成了can通讯驱动maxon电机，实现了ppm（位置模式）、pvm（速度模式）、csp（循环同步位置控制）三种模式的控制。
-  
+效果展示（转载自本人B站）：https://www.bilibili.com/video/BV1HN4y1r7b5/?spm_id_from=333.999.0.0 
 ![maxon_Logo_small](https://user-images.githubusercontent.com/66867384/143436010-5d3968e7-79f8-48b9-a35b-e5159ec20ee6.png)
 
 ![](https://github.com/hhz0328/ros_exoskeleton_maxon_simulation/blob/main/%E4%BB%BF%E7%9C%9F%E6%8E%A7%E5%88%B6%E6%A1%86%E6%9E%B6.jpg)
