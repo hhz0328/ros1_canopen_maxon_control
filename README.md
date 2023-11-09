@@ -4,7 +4,7 @@
 
 配套机器人仿真代码：https://github.com/hhz0328/ros_exoskeleton_maxon_simulation
 
-效果展示（转载自本人B站）：https://www.bilibili.com/video/BV1HN4y1r7b5/?spm_id_from=333.999.0.0 
+实物机器人展示视频（转载自本人B站）：https://www.bilibili.com/video/BV1HN4y1r7b5/?spm_id_from=333.999.0.0 
 
 ![](https://github.com/hhz0328/ros_exoskeleton_maxon_simulation/blob/main/%E4%BB%BF%E7%9C%9F%E6%8E%A7%E5%88%B6%E6%A1%86%E6%9E%B6.jpg)
 ![maxon_Logo_small](https://github.com/hhz0328/canopen_maxon_control/blob/main/%E4%BB%BF%E7%9C%9F%26%E5%AE%9E%E7%89%A9%E8%81%94%E8%B0%83.jpg)
