@@ -41,3 +41,6 @@
   $ rosservice call /driver/init
   $ roslaunch exo_stand_moveit_config demo.launch rviz_tutorial:=true
 ```
+
+## GOOD LUCK
+坚持开源，共同进步！有问题，可以通过主页邮箱留言，也可以issue提问
