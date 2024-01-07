@@ -32,7 +32,7 @@
   $ rosservice call /driver/init
   $ rosservice call /maxon/driver/set_object base_link1_joint '!!str6081' '!!str 1000' false
 ```
-- **（3）多电机的csp循环同步位置模式控制（经过测试，可以稳定驱动4个电机）：**
+- **（3）多电机的csp循环同步位置模式控制（经过测试，可以稳定驱动4个电机，想要更快更多，可以自己打补丁，篇幅有限不多加赘述）：**
 ```
   $ roscore
   $ sudo ip link set can0 type can bitrate 1000000
