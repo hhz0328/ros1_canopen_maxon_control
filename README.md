@@ -1,6 +1,6 @@
 # ros1_canopen_maxon_control——2023.7.28
 ## 1）功能介绍
-在ros1-noetic中，使用了ros_control和ros_canopen官方提供的功能包，完成了can通讯驱动maxon电机，实现了ppm（位置模式）、pvm（速度模式）、csp（循环同步位置控制）三种模式的控制。
+在ros1-noetic中，使用了ros_control和ros_canopen官方提供的功能包，完成了can通讯驱动maxon电机（**EPOS4**），实现了ppm（位置模式）、pvm（速度模式）、csp（循环同步位置控制）三种模式的控制。
 
 配套机器人仿真环境代码：https://github.com/hhz0328/ros1_exoskeleton_maxon_simulation
 
