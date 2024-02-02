@@ -10,6 +10,8 @@
 
 https://user-images.githubusercontent.com/98389310/222486797-e5bc2010-4e66-40bb-af23-108a6bbef23e.mp4
 
+https://user-images.githubusercontent.com/hhz0328/hhz0328/blob/main/%E5%9B%BE%E5%BA%93/%E6%BC%94%E7%A4%BA.mp4
+
 https://github.com/hhz0328/hhz0328/blob/main/%E5%9B%BE%E5%BA%93/%E6%BC%94%E7%A4%BA.mp4
 
 ## 2）环境配置
