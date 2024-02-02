@@ -8,9 +8,7 @@
 
 ![](https://github.com/hhz0328/ros1_exoskeleton_maxon_simulation/blob/noetic/%E4%BB%BF%E7%9C%9F%E6%8E%A7%E5%88%B6%E6%A1%86%E6%9E%B6.jpg)
 
-https://user-images.githubusercontent.com/98389310/222486797-e5bc2010-4e66-40bb-af23-108a6bbef23e.mp4
-
-https://user-images.githubusercontent.com/hhz0328/hhz0328/blob/main/%E5%9B%BE%E5%BA%93/%E6%BC%94%E7%A4%BA.mp4
+![](https://github.com/hhz0328/hhz0328/blob/main/%E5%9B%BE%E5%BA%93/%E6%BC%94%E7%A4%BA.mp4)
 
 https://github.com/hhz0328/hhz0328/blob/main/%E5%9B%BE%E5%BA%93/%E6%BC%94%E7%A4%BA.mp4
 
