@@ -8,9 +8,7 @@
 
 ![](https://github.com/hhz0328/ros1_exoskeleton_maxon_simulation/blob/noetic/%E4%BB%BF%E7%9C%9F%E6%8E%A7%E5%88%B6%E6%A1%86%E6%9E%B6.jpg)
 
-![](https://github.com/hhz0328/hhz0328/blob/main/%E5%9B%BE%E5%BA%93/%E6%BC%94%E7%A4%BA.mp4)
-
-https://github.com/hhz0328/hhz0328/blob/main/%E5%9B%BE%E5%BA%93/%E6%BC%94%E7%A4%BA.mp4
+![](https://github.com/hhz0328/ros1_canopen_maxon_control/blob/noetic/%E4%BB%BF%E7%9C%9F%26%E5%AE%9E%E7%89%A9%E8%81%94%E8%B0%83.jpg)
 
 ## 2）环境配置
 （1）**用到的功能包**：ros_control、ros_canopen
